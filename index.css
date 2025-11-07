@@ -1,0 +1,55 @@
+/* Global styles for TrainMe */
+:root {
+  --bg: #f7fafc;
+  --card: #ffffff;
+  --muted: #6b7280;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+a {
+  color: inherit;
+}
+
+/* Utility helpers */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Card subtle hover effect */
+.MuiPaper-root:hover {
+  transform: translateY(-4px);
+  transition: transform 220ms ease;
+}
+
+/* Make Hero CTA stand out on small screens */
+.hero-cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .MuiDrawer-root {
+    display: none;
+  }
+}
